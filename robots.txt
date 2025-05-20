@@ -1,0 +1,60 @@
+# IndianToon.web.app robots.txt
+User-agent: *
+Allow: /
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /Images/*.jpg
+Allow: /Images/*.jpeg
+Allow: /Images/*.png
+Allow: /Images/*.gif
+Allow: /Images/*.webp
+Disallow: /Images/*.psd
+Disallow: /Images/*.ai
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Yandex specific
+User-agent: Yandex
+Allow: /
+
+# Main Sitemaps
+Sitemap: https://indiantoon.web.app/sitemap-1.xml
+
+# Important pages - high priority
+Allow: /index.html
+Allow: /doraemon-movies.html
+Allow: /anime.html
+Allow: /cartoons.html
+Allow: /contact.html
+Allow: /about.html
+Allow: /privacy.html
+Allow: /doraemon-movies/
+
+# Allow image indexing
+Allow: /Images/
+
+# Block unnecessary files and directories
+Disallow: /*.json
+Disallow: /*.md
+Disallow: /*.log
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /.vscode/
+Disallow: /node_modules/
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /cgi-bin/
+Disallow: /fonts/
+Disallow: /.firebase/
+
+# Allow assets - high importance
+Allow: /style.css
+Allow: /doraemon-movies.css
+Allow: /script.js
