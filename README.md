@@ -38,6 +38,9 @@
 If you liked this portfolio or found it useful:
 
 🌟 Star this repo
+
 🍴 Fork it
+
 🔁 Share with friends
+
 🛠️ Use it as inspiration for your own site!
