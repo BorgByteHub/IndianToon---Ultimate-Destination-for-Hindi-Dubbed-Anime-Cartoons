@@ -1,4 +1,4 @@
-# 🇮🇳 IndianToon – Indian Comics & Cartoons Platform
+# IndianToon – Ultimate Destination for Hindi Dubbed Anime & Cartoons
 
 [![Live Site](https://img.shields.io/website?url=https%3A%2F%2Findiantoon.web.app&label=Live%20Site&style=for-the-badge&color=4CAF50)](https://indiantoon.web.app)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
