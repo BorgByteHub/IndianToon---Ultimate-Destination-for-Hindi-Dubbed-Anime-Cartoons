@@ -1,0 +1,330 @@
+/* Movie Page Template Styles */
+.movie-page {
+    padding-top: 90px;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.movie-header {
+    background-color: #ffdd00;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.movie-header h1 {
+    color: #1a1a1a;
+    font-family: 'MyFont5', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.5);
+}
+
+.movie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    .movie-content {
+        flex-direction: row;
+    }
+
+    .main-content {
+        flex: 1;
+        max-width: 850px;
+    }
+
+    .sidebar {
+        width: 300px;
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+    }
+}
+
+/* Movie Info Section */
+.movie-info-section {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.movie-featured-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.movie-details {
+    padding: 25px;
+    background: #fff;
+}
+
+.movie-details h3 {
+    font-family: 'MyFont2', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info-table tr {
+    border-bottom: 1px solid #eee;
+}
+
+.info-table tr:last-child {
+    border-bottom: none;
+}
+
+.info-table td {
+    padding: 15px 20px;
+    font-family: 'MyFont3', sans-serif;
+}
+
+.info-table td:first-child {
+    font-weight: bold;
+    width: 140px;
+    color: #1a1a1a;
+    background: rgba(240,220,0,0.1);
+}
+
+.movie-description {
+    font-family: 'MyFont3', sans-serif;
+    color: #666;
+    line-height: 1.8;
+    padding: 0 25px 25px;
+}
+
+.movie-description p {
+    margin-bottom: 15px;
+}
+
+/* Download Section */
+.download-section {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+   height: max-content;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.download-section h2 {
+    font-family: 'MyFont2', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0dc00;
+}
+
+.download-options {
+    display: grid;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .download-section {
+        height: 96%;
+    }
+    .screenshots-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .movie-description {
+        display: none;
+    }
+    .screenshot {
+        width: 210%;
+    }
+}
+
+.download-card {
+    background: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #eee;
+}
+
+.quality-label {
+    font-family: 'MyFont2', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.quality-badge {
+    background: #1a1a1a;
+    color: #f0dc00;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.file-info {
+    font-family: 'MyFont3', sans-serif;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.download-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'MyFont2', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.download-btn.mediafire {
+    background: #1a1a1a;
+    color: #f0dc00;
+}
+
+.download-btn.gdrive {
+    background: #f0dc00;
+    color: #1a1a1a;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Screenshots Section */
+.screenshots-section {
+   
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.screenshots-section h2 {
+    font-family: 'MyFont2', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0dc00;
+}
+
+.screenshots-grid {
+    display: grid;
+    gap: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .screenshots-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+
+.screenshot {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.screenshot img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.screenshot img:hover {
+    transform: scale(1.05);
+}
+
+/* Sidebar */
+.sidebar {
+    margin-bottom: 30px;
+    position: static;
+}
+
+.popular-posts {
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.popular-posts h3 {
+    font-family: 'MyFont2', sans-serif;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0dc00;
+}
+
+.popular-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-list li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.popular-list li:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.popular-list a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-family: 'MyFont3', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.popular-list a:hover {
+    color: #f0dc00;
+} 
+
